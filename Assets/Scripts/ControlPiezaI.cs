@@ -29,6 +29,16 @@ public class ControlPiezaI : ControlPiezas
             {
                 girarPieza(1);
             }
+
+            //Desplazamiento
+            if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                moverPieza(1);
+            }
+            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                moverPieza(-1);
+            }
         }
     }
 

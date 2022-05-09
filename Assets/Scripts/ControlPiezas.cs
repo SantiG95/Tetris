@@ -56,4 +56,8 @@ public class ControlPiezas : MonoBehaviour
         }
     }
 
+    public void moverPieza(int direccionMovimiento)
+    {
+        transform.position += new Vector3(direccionMovimiento, 0, 0);
+    }
 }
