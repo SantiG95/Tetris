@@ -1,0 +1,972 @@
+fileFormatVersion: 2
+guid: 87b155b97cea16242b1fc53c2f263f58
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 569672911320155032
+    second: minos00_0
+  - first:
+      213: -3893261189560388508
+    second: minos00_1
+  - first:
+      213: 6586222578098688786
+    second: minos00_2
+  - first:
+      213: 5425719262808772374
+    second: minos00_3
+  - first:
+      213: 1207592374543412898
+    second: minos00_4
+  - first:
+      213: -5360621306732697544
+    second: minos00_5
+  - first:
+      213: 4999095926798910316
+    second: minos00_6
+  - first:
+      213: -1502517438151019606
+    second: minos00_7
+  - first:
+      213: 6699210058198098298
+    second: minos00_8
+  - first:
+      213: 5222512933422384728
+    second: minos00_9
+  - first:
+      213: -2362363726368980428
+    second: minos00_10
+  - first:
+      213: -5878812911032547095
+    second: minos00_11
+  - first:
+      213: 962669211617349326
+    second: minos00_12
+  - first:
+      213: -3341955272801606052
+    second: minos00_13
+  - first:
+      213: 7686464467165140015
+    second: minos00_14
+  - first:
+      213: 995452971168154066
+    second: minos00_15
+  - first:
+      213: 143903638521984920
+    second: minos00_16
+  - first:
+      213: -3821963848647612774
+    second: minos00_17
+  - first:
+      213: -2039503342739205362
+    second: minos00_18
+  - first:
+      213: 4666612759235814738
+    second: minos00_19
+  - first:
+      213: -4113748591404520091
+    second: minos00_20
+  - first:
+      213: -4483856114208236726
+    second: minos00_21
+  - first:
+      213: 2527712434879182101
+    second: minos00_22
+  - first:
+      213: 23485246303384653
+    second: minos00_23
+  - first:
+      213: 6599935558709881300
+    second: minos00_24
+  - first:
+      213: 705602146320044292
+    second: minos00_25
+  - first:
+      213: 3754589660690360142
+    second: minos00_26
+  - first:
+      213: 7339046479489294439
+    second: minos00_27
+  - first:
+      213: 7694102040159367477
+    second: minos00_28
+  - first:
+      213: -8313052178773906029
+    second: minos00_29
+  - first:
+      213: 1498521026980081101
+    second: minos00_30
+  - first:
+      213: 3243609231520254257
+    second: minos00_31
+  - first:
+      213: 7617344245296388836
+    second: minos00_32
+  - first:
+      213: -8961567318576534322
+    second: minos00_33
+  - first:
+      213: 8245625581719419403
+    second: minos00_34
+  - first:
+      213: -2646334599618175125
+    second: minos00_35
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: minos00_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 204
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 893866d9e72e7e700800000000000000
+      internalID: 569672911320155032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 204
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4643072539b58f9c0800000000000000
+      internalID: -3893261189560388508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_2
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 204
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 213da3b1a86f66b50800000000000000
+      internalID: 6586222578098688786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_3
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 204
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f06be3ce60c4b40800000000000000
+      internalID: 5425719262808772374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_4
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 204
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae6126ddda32c010800000000000000
+      internalID: 1207592374543412898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_5
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 204
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838aec4c25f3b95b0800000000000000
+      internalID: -5360621306732697544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_6
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 204
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6383f2524b506540800000000000000
+      internalID: 4999095926798910316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_7
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 204
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa3bd26c95cf52be0800000000000000
+      internalID: -1502517438151019606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_8
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 204
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a712f92dd0068fc50800000000000000
+      internalID: 6699210058198098298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_9
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 148
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8564687c7d71a7840800000000000000
+      internalID: 5222512933422384728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_10
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 148
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 432428b05b2373fd0800000000000000
+      internalID: -2362363726368980428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_11
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 148
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8cce00ec24a6ea0800000000000000
+      internalID: -5878812911032547095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_12
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 148
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece48aa2c861c5d00800000000000000
+      internalID: 962669211617349326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_13
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 148
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c56aa65c26dfe91d0800000000000000
+      internalID: -3341955272801606052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_14
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 148
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f245a0055becbaa60800000000000000
+      internalID: 7686464467165140015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_15
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 148
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1c511043f80dd00800000000000000
+      internalID: 995452971168154066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_16
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 148
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8973df7c89f3ff100800000000000000
+      internalID: 143903638521984920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_17
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 148
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9669f81128a5fac0800000000000000
+      internalID: -3821963848647612774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_18
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 92
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e03dec9f38a32b3e0800000000000000
+      internalID: -2039503342739205362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_19
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 92
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2556e8a649323c040800000000000000
+      internalID: 4666612759235814738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_20
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 92
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56de112a37709e6c0800000000000000
+      internalID: -4113748591404520091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_21
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 92
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b97a0ee9426c1c0800000000000000
+      internalID: -4483856114208236726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_22
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 92
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 515bf4f211d341320800000000000000
+      internalID: 2527712434879182101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_23
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 92
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44306305bf635000800000000000000
+      internalID: 23485246303384653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_24
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 92
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d92f553c6ea79b50800000000000000
+      internalID: 6599935558709881300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_25
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 92
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 401d824e96dcac900800000000000000
+      internalID: 705602146320044292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_26
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 92
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e47adca576bfa1430800000000000000
+      internalID: 3754589660690360142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_27
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 36
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7606a00a3e789d560800000000000000
+      internalID: 7339046479489294439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_28
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 36
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531be495a01f6ca60800000000000000
+      internalID: 7694102040159367477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_29
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 36
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39de4ec761b12ac80800000000000000
+      internalID: -8313052178773906029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_30
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 36
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcde99d3fe0dbc410800000000000000
+      internalID: 1498521026980081101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_31
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 36
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13941f2296d930d20800000000000000
+      internalID: 3243609231520254257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_32
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 36
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ead1c09b3e36b960800000000000000
+      internalID: 7617344245296388836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_33
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 36
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eccee71110e12a380800000000000000
+      internalID: -8961567318576534322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_34
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 36
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a724587c85e6270800000000000000
+      internalID: 8245625581719419403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minos00_35
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 35
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6fdee8d3b4564bd0800000000000000
+      internalID: -2646334599618175125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
