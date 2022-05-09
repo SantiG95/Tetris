@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ControlPiezaSZ : ControlPiezas
+public class ControlPiezaI : ControlPiezas
 {
+    float modificadorGiro = 0.5f;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -28,12 +30,15 @@ public class ControlPiezaSZ : ControlPiezas
                 girarPieza(1);
             }
         }
-
     }
 
     private new void girarPieza(int direccionGiro)
     {
-        transform.Rotate(Vector3.forward * (90 - transform.eulerAngles.z * 2));
+        transform.Rotate(Vector3.forward * 90 * direccionGiro);
+        transform.position += Vector3.left * modificadorGiro;
+        transform.position += Vector3.up * modificadorGiro;
+        modificadorGiro *= -1;
+        
         girarPiezas();
     }
 }
