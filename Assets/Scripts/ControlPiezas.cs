@@ -9,6 +9,8 @@ public class ControlPiezas : MonoBehaviour
 
     public float tiempoParaMoverse = 0;
     public bool moverse = true;
+
+    
     
 
     public void hacerMovimientoAbajo()
@@ -44,6 +46,8 @@ public class ControlPiezas : MonoBehaviour
     public void girarPieza(int direccionGiro)
     {
         transform.Rotate(Vector3.forward * 90 * direccionGiro);
+        corregirPosicion();
+
         girarPiezas();
 
     }
@@ -58,6 +62,51 @@ public class ControlPiezas : MonoBehaviour
 
     public void moverPieza(int direccionMovimiento)
     {
-        transform.position += new Vector3(direccionMovimiento, 0, 0);
+        if (puedeMoverseAlCostado(direccionMovimiento))
+        {
+            transform.position += new Vector3(direccionMovimiento, 0, 0);
+        }
+    }
+
+    public bool puedeMoverseAlCostado(int direccionMovimiento)
+    {
+        if(direccionMovimiento > 0)
+        {
+            for (int i = 0; i < transform.childCount - 1; i++)
+            {
+                if (transform.GetChild(i).GetComponent<MiniPiezas>().espacioDerechaEstaOcupado())
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        else
+        {
+            for (int i = 0; i < transform.childCount - 1; i++)
+            {
+                if (transform.GetChild(i).GetComponent<MiniPiezas>().espacioIzquierdaEstaOcupado())
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+
+    public void corregirPosicion()
+    {
+        for (int i = 0; i < transform.childCount - 1; i++)
+        {
+            Debug.Log(transform.GetChild(i).position.x);
+            if(transform.GetChild(i).position.x > 5)
+            {
+                moverPieza(-1);
+            }
+            else if(transform.GetChild(i).position.x < -6)
+            {
+                moverPieza(1);
+            }
+        }
     }
 }

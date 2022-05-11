@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,8 @@ using UnityEngine;
 public class ControlPiezaI : ControlPiezas
 {
     float modificadorGiro = 0.5f;
+
+    
 
     // Start is called before the first frame update
     void Start()
@@ -48,7 +51,10 @@ public class ControlPiezaI : ControlPiezas
         transform.position += Vector3.left * modificadorGiro;
         transform.position += Vector3.up * modificadorGiro;
         modificadorGiro *= -1;
+
+        corregirPosicion();
         
         girarPiezas();
+
     }
 }

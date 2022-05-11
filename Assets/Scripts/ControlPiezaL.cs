@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ControlPiezaSZ : ControlPiezas
+public class ControlPiezaL : ControlPiezas
 {
-    [SerializeField] bool piezaInversa = false;
+    [SerializeField] bool piezaInvertida = false;
+    [SerializeField] int modificadorGiro = 1;
     [SerializeField] int cantGiros = 0;
-
+    [SerializeField] int invertirGiro = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,23 +45,29 @@ public class ControlPiezaSZ : ControlPiezas
 
     }
 
-    private new void girarPieza(int direccionGiro)
+    public new void girarPieza(int direccionGiro)
     {
         cantGiros += direccionGiro;
-        if(cantGiros == 2)
+        if (cantGiros == 2)
         {
             cantGiros = 0;
-            moverPieza(1);
+            if (piezaInvertida) moverPieza(-1 * invertirGiro);
+            if (!piezaInvertida) moverPieza(1 * invertirGiro);
+            invertirGiro *= -1;
         }
         else if (cantGiros == -2)
         {
             cantGiros = 0;
-            moverPieza(-1);
+            if (piezaInvertida) moverPieza(-1 * invertirGiro);
+            if (!piezaInvertida) moverPieza(1 * invertirGiro);
+            invertirGiro *= -1;
         }
 
-        transform.Rotate(Vector3.forward * (90 - transform.eulerAngles.z * 2));
+
+        transform.Rotate(Vector3.forward * 90 * direccionGiro);
         corregirPosicion();
 
         girarPiezas();
+
     }
 }

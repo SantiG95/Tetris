@@ -20,7 +20,12 @@ public class SiguienteEspacio : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         espacioOcupado = collision.gameObject.GetComponent<EspacioCasilla>().estaOcupada();
-        Debug.Log("El espacio esta " + collision.gameObject.GetComponent<EspacioCasilla>().estaOcupada());
+        //Debug.Log("El espacio abajo esta " + collision.gameObject.GetComponent<EspacioCasilla>().estaOcupada());
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        espacioOcupado = false;
     }
 
     public bool estaOcupado()
