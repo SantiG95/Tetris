@@ -7,8 +7,7 @@ public class ControlPiezaI : ControlPiezas
 {
     float modificadorGiro = 0.5f;
 
-    
-
+    [SerializeField] int cantGiros = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,13 +46,28 @@ public class ControlPiezaI : ControlPiezas
 
     private new void girarPieza(int direccionGiro)
     {
-        transform.Rotate(Vector3.forward * 90 * direccionGiro);
-        transform.position += Vector3.left * modificadorGiro;
-        transform.position += Vector3.up * modificadorGiro;
-        modificadorGiro *= -1;
+        cantGiros = 1 + -cantGiros;
+        int posicionNueva = 1;
+        if (cantGiros == 0)
+        {
+            for (int i = 0; i < transform.childCount; i++)
+            {
+                transform.GetChild(i).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(0, posicionNueva));
+                posicionNueva -= 1;
+                Debug.Log("la posicion nueva es " + posicionNueva);
+            }
+        }
+        else
+        {
+            for (int i = 0; i < transform.childCount; i++)
+            {
+                transform.GetChild(i).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(posicionNueva, 0));
+                posicionNueva -= 1;
+            }
+        }
 
-        corregirPosicion();
-        
+        //corregirPosicion();
+
         girarPiezas();
 
     }

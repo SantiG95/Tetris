@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class ControlPiezaL : ControlPiezas
 {
-    [SerializeField] bool piezaInvertida = false;
-    [SerializeField] int modificadorGiro = 1;
+    [SerializeField] bool modificadorInverso = false;
     [SerializeField] int cantGiros = 0;
-    [SerializeField] int invertirGiro = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,27 +45,84 @@ public class ControlPiezaL : ControlPiezas
 
     public new void girarPieza(int direccionGiro)
     {
-        cantGiros += direccionGiro;
-        if (cantGiros == 2)
+        cantGiros+= direccionGiro;
+        if (cantGiros > 3) cantGiros = 0;
+        if (cantGiros < 0) cantGiros = 3;
+
+        int modificadorY = modificadorInverso ? 2 : 0;
+        Debug.Log(modificadorInverso);
+        if (modificadorInverso)
         {
-            cantGiros = 0;
-            if (piezaInvertida) moverPieza(-1 * invertirGiro);
-            if (!piezaInvertida) moverPieza(1 * invertirGiro);
-            invertirGiro *= -1;
-        }
-        else if (cantGiros == -2)
-        {
-            cantGiros = 0;
-            if (piezaInvertida) moverPieza(-1 * invertirGiro);
-            if (!piezaInvertida) moverPieza(1 * invertirGiro);
-            invertirGiro *= -1;
-        }
+            switch (cantGiros)
+            {
+                case 0:
+                    transform.GetChild(0).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(2, 1));
+                    transform.GetChild(1).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(2, 0));
+                    transform.GetChild(2).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(2, -1));
+                    transform.GetChild(3).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(1, -1));
+                    break;
 
 
-        transform.Rotate(Vector3.forward * 90 * direccionGiro);
-        corregirPosicion();
+                case 1:
+                    transform.GetChild(0).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(1, -1));
+                    transform.GetChild(1).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(2, -1));
+                    transform.GetChild(2).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(3, -1));
+                    transform.GetChild(3).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(1, 0));
+                    break;
+
+                case 2:
+                    transform.GetChild(0).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(1, 1));
+                    transform.GetChild(1).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(1, 0));
+                    transform.GetChild(2).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(1, -1));
+                    transform.GetChild(3).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(2, 1));
+                    break;
+
+                case 3:
+                    transform.GetChild(0).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(1, 0));
+                    transform.GetChild(1).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(2, 0));
+                    transform.GetChild(2).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(3, 0));
+                    transform.GetChild(3).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(3, -1));
+                    break;
+            }
+
+        }
+        else
+        {
+            switch (cantGiros)
+            {
+                case 0:
+                    transform.GetChild(0).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(1, 1));
+                    transform.GetChild(1).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(1, 0));
+                    transform.GetChild(2).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(1, -1));
+                    transform.GetChild(3).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(2, -1));
+                    break;
+
+
+                case 1:
+                    transform.GetChild(0).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(1, -1));
+                    transform.GetChild(1).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(2, -1));
+                    transform.GetChild(2).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(3, -1));
+                    transform.GetChild(3).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(3, 0));
+                    break;
+
+                case 2:
+                    transform.GetChild(0).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(2, 1));
+                    transform.GetChild(1).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(2, 0));
+                    transform.GetChild(2).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(2, -1));
+                    transform.GetChild(3).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(1, 1));
+                    break;
+
+                case 3:
+                    transform.GetChild(0).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(1, 0));
+                    transform.GetChild(1).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(2, 0));
+                    transform.GetChild(2).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(3, 0));
+                    transform.GetChild(3).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(1, -1));
+                    break;
+            }
+
+        }
+        //corregirPosicion();
 
         girarPiezas();
-
     }
 }

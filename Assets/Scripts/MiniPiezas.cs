@@ -23,6 +23,11 @@ public class MiniPiezas : MonoBehaviour
         
     }
 
+    public void cambiarPosicion(Vector2 nuevaPosicion)
+    {
+        transform.localPosition = nuevaPosicion;
+    }
+
     public void girarMiniPieza()
     {
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
