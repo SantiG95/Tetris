@@ -54,7 +54,7 @@ public class ControlPiezaI : ControlPiezas
             {
                 transform.GetChild(i).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(0, posicionNueva));
                 posicionNueva -= 1;
-                Debug.Log("la posicion nueva es " + posicionNueva);
+                //Debug.Log("la posicion nueva es " + posicionNueva);
             }
         }
         else
@@ -66,7 +66,7 @@ public class ControlPiezaI : ControlPiezas
             }
         }
 
-        //corregirPosicion();
+        corregirPosicion();
 
         girarPiezas();
 

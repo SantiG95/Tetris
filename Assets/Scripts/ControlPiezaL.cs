@@ -121,7 +121,7 @@ public class ControlPiezaL : ControlPiezas
             }
 
         }
-        //corregirPosicion();
+        corregirPosicion();
 
         girarPiezas();
     }

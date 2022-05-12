@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4563435361242329698}
-  - component: {fileID: 1379670186}
+  - component: {fileID: 6863974180837931707}
   m_Layer: 0
   m_Name: Pieza T
   m_TagString: Untagged
@@ -36,7 +36,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1379670186
+--- !u!114 &6863974180837931707
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -45,10 +45,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8619735553514104885}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f6b34fac89e07f4686752626a462d74, type: 3}
+  m_Script: {fileID: 11500000, guid: 8dbef282ec96f7c41bcc6d1829600919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoMovimiento: 60
+  tiempoMovimiento: 2
   tiempoParaMoverse: 0
   moverse: 1
 --- !u!1001 &2552503056366113000

@@ -65,7 +65,7 @@ public class ControlPiezaSZ : ControlPiezas
             transform.GetChild(3).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(segundoY, 3));
         }
 
-        //corregirPosicion();
+        corregirPosicion();
 
         girarPiezas();
     }

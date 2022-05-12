@@ -2525,6 +2525,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 805919907, guid: 40996bac7d8d633418743d696e218e4b, type: 3}
+      propertyPath: moverse
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 805919907, guid: 40996bac7d8d633418743d696e218e4b, type: 3}
+      propertyPath: tiempoMovimiento
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1055935967984341433, guid: 40996bac7d8d633418743d696e218e4b, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -6505,6 +6513,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1197419357, guid: 4dc8a01a9f9058944ac1f861c42da463, type: 3}
+      propertyPath: moverse
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197419357, guid: 4dc8a01a9f9058944ac1f861c42da463, type: 3}
+      propertyPath: tiempoMovimiento
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2243595501205035988, guid: 4dc8a01a9f9058944ac1f861c42da463, type: 3}
       propertyPath: m_Name
       value: Pieza L inversa
@@ -11541,6 +11557,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1948226822, guid: ac96f1f7393ef6f40ae98ea846d13eaa, type: 3}
+      propertyPath: moverse
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1948226822, guid: ac96f1f7393ef6f40ae98ea846d13eaa, type: 3}
+      propertyPath: tiempoMovimiento
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1987548425020936944, guid: ac96f1f7393ef6f40ae98ea846d13eaa, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -12926,6 +12950,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 266782724, guid: 69248839ff7ef7f46b372c556e62d4bf, type: 3}
+      propertyPath: moverse
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 266782724, guid: 69248839ff7ef7f46b372c556e62d4bf, type: 3}
+      propertyPath: tiempoMovimiento
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1196456334087052001, guid: 69248839ff7ef7f46b372c556e62d4bf, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -15704,6 +15736,10 @@ PrefabInstance:
       propertyPath: moverse
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 463119995, guid: 15941a223e3ae7946a0240b5dfb41f0f, type: 3}
+      propertyPath: tiempoMovimiento
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2947778968588843882, guid: 15941a223e3ae7946a0240b5dfb41f0f, type: 3}
       propertyPath: m_Name
       value: Pieza I
@@ -15714,11 +15750,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8423592580070226210, guid: 15941a223e3ae7946a0240b5dfb41f0f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8423592580070226210, guid: 15941a223e3ae7946a0240b5dfb41f0f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8423592580070226210, guid: 15941a223e3ae7946a0240b5dfb41f0f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20068,7 +20104,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 577995103, guid: 192f2bfe94299ea4b909fac75f28310e, type: 3}
       propertyPath: moverse
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3674130591637023845, guid: 192f2bfe94299ea4b909fac75f28310e, type: 3}
       propertyPath: m_RootOrder

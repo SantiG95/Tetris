@@ -72,8 +72,9 @@ public class ControlPiezas : MonoBehaviour
     {
         if(direccionMovimiento > 0)
         {
-            for (int i = 0; i < transform.childCount - 1; i++)
+            for (int i = 0; i < transform.childCount -1; i++)
             {
+                //Debug.Log(transform.GetChild(i).GetComponent<MiniPiezas>());
                 if (transform.GetChild(i).GetComponent<MiniPiezas>().espacioDerechaEstaOcupado())
                 {
                     return false;
@@ -96,16 +97,15 @@ public class ControlPiezas : MonoBehaviour
 
     public void corregirPosicion()
     {
-        for (int i = 0; i < transform.childCount - 1; i++)
+        for (int i = 0; i < transform.childCount; i++)
         {
-            Debug.Log(transform.GetChild(i).position.x);
-            if(transform.GetChild(i).position.x > 5)
+            if(transform.GetChild(i).position.x > 4)
             {
-                moverPieza(-1);
+                transform.position += new Vector3(-1, 0, 0);
             }
-            else if(transform.GetChild(i).position.x < -6)
+            else if(transform.GetChild(i).position.x < -5)
             {
-                moverPieza(1);
+                transform.position += new Vector3(1, 0, 0);
             }
         }
     }
