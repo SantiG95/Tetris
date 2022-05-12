@@ -28,6 +28,12 @@ public class EspacioCasilla : MonoBehaviour
         miSprite.sprite = listaSprites[casillaOcupada];
     }
 
+    public void ocuparCasilla()
+    {
+        casillaOcupada = 1;
+        miSprite.sprite = listaSprites[casillaOcupada];
+    }
+
     public bool estaOcupada()
     {
         return casillaOcupada == 1;

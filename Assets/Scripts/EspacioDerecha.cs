@@ -5,10 +5,13 @@ using UnityEngine;
 public class EspacioDerecha : MonoBehaviour
 {
     [SerializeField] bool espacioOcupado = false;
+    GridEspacios grid;
     // Start is called before the first frame update
     void Start()
     {
         transform.position = transform.parent.position + Vector3.right;
+
+        grid = GameObject.Find("GridEspacios").GetComponent<GridEspacios>();
     }
 
     // Update is called once per frame
@@ -28,8 +31,9 @@ public class EspacioDerecha : MonoBehaviour
         espacioOcupado = false;
     }
 
-    public bool estaOcupado()
+    public bool puedeMoverseDerecha()
     {
-        return espacioOcupado;
+        if (transform.position.x > 4) return true;
+        return grid.casillaEstaOcupada((int)transform.position.x, (int)transform.position.y);
     }
 }

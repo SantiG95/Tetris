@@ -40,6 +40,15 @@ public class ControlPiezaSZ : ControlPiezas
             {
                 moverPieza(-1);
             }
+
+            if (Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                tiempoMovimiento = 0.1f;
+            }
+            if (Input.GetKeyUp(KeyCode.DownArrow))
+            {
+                tiempoMovimiento = 2f;
+            }
         }
 
     }
@@ -59,10 +68,10 @@ public class ControlPiezaSZ : ControlPiezas
         }
         else
         {
-            transform.GetChild(0).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(primerY, 1));
-            transform.GetChild(1).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(primerY, 2));
-            transform.GetChild(2).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(segundoY, 2));
-            transform.GetChild(3).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(segundoY, 3));
+            transform.GetChild(0).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(segundoY, 1));
+            transform.GetChild(1).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(segundoY, 2));
+            transform.GetChild(2).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(primerY, 2));
+            transform.GetChild(3).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(primerY, 3));
         }
 
         corregirPosicion();

@@ -9,12 +9,17 @@ public class MiniPiezas : MonoBehaviour
     EspacioDerecha espacioDerecha;
     EspacioIzquierda espacioIzquierda;
 
+    GameObject casillaOcupando;
+    GridEspacios grid;
+
     // Start is called before the first frame update
     void Start()
     {
         siguienteEspacio = transform.GetChild(0).gameObject.GetComponent<SiguienteEspacio>();
         espacioDerecha = transform.GetChild(1).gameObject.GetComponent<EspacioDerecha>();
         espacioIzquierda = transform.GetChild(2).gameObject.GetComponent<EspacioIzquierda>();
+
+        grid = GameObject.Find("GridEspacios").GetComponent<GridEspacios>();
     }
 
     // Update is called once per frame
@@ -40,11 +45,21 @@ public class MiniPiezas : MonoBehaviour
 
     public bool espacioDerechaEstaOcupado()
     {
-        return espacioDerecha.estaOcupado();
+        return espacioDerecha.puedeMoverseDerecha();
     }
 
     public bool espacioIzquierdaEstaOcupado()
     {
-        return espacioIzquierda.estaOcupado();
+        return espacioIzquierda.puedeMoverseIzquierda();
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        casillaOcupando = collision.gameObject;
+    }
+
+    public void ocuparCasilla()
+    {
+        grid.ocuparCasilla((int)transform.position.x, (int)transform.position.y);
     }
 }

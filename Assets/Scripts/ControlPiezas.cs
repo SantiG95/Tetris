@@ -24,6 +24,11 @@ public class ControlPiezas : MonoBehaviour
             {
                 Debug.Log("DEJO DE MOVERSE");
                 moverse = false;
+
+                for (int i = 0; i < transform.childCount; i++)
+                {
+                    transform.GetChild(i).GetComponent<MiniPiezas>().ocuparCasilla();
+                }
                 return;
             }
 
@@ -84,7 +89,7 @@ public class ControlPiezas : MonoBehaviour
         }
         else
         {
-            for (int i = 0; i < transform.childCount - 1; i++)
+            for (int i = 0; i < transform.childCount; i++)
             {
                 if (transform.GetChild(i).GetComponent<MiniPiezas>().espacioIzquierdaEstaOcupado())
                 {

@@ -37,6 +37,15 @@ public class ControlPiezaT : ControlPiezas
             {
                 moverPieza(-1);
             }
+
+            if (Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                tiempoMovimiento = 0.1f;
+            }
+            if (Input.GetKeyUp(KeyCode.DownArrow))
+            {
+                tiempoMovimiento = 2f;
+            }
         }
 
     }
