@@ -47,9 +47,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a65ead4d837f7e14da5588f27a28204d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoMovimiento: 60
+  tiempoMovimiento: 2
   tiempoParaMoverse: 0
-  moverse: 0
+  moverse: 1
   cantGiros: 0
 --- !u!1001 &952473888071750400
 PrefabInstance:

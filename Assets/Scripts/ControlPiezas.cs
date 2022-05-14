@@ -10,8 +10,13 @@ public class ControlPiezas : MonoBehaviour
     public float tiempoParaMoverse = 0;
     public bool moverse = true;
 
-    
-    
+    GridEspacios grid;
+
+    void Start()
+    {
+        grid = GameObject.Find("GridEspacios").GetComponent<GridEspacios>();
+    }
+
 
     public void hacerMovimientoAbajo()
     {
@@ -22,13 +27,13 @@ public class ControlPiezas : MonoBehaviour
 
             if (!puedeMoverseAbajo())
             {
-                Debug.Log("DEJO DE MOVERSE");
                 moverse = false;
 
                 for (int i = 0; i < transform.childCount; i++)
                 {
                     transform.GetChild(i).GetComponent<MiniPiezas>().ocuparCasilla();
                 }
+                GameObject.Find("GridEspacios").GetComponent<GridEspacios>().revisarGrid();
                 return;
             }
 
@@ -104,14 +109,27 @@ public class ControlPiezas : MonoBehaviour
     {
         for (int i = 0; i < transform.childCount; i++)
         {
-            if(transform.GetChild(i).position.x > 4)
+            if(transform.GetChild(i).position.x > 9)
             {
                 transform.position += new Vector3(-1, 0, 0);
             }
-            else if(transform.GetChild(i).position.x < -5)
+            else if(transform.GetChild(i).position.x < 0)
             {
                 transform.position += new Vector3(1, 0, 0);
             }
         }
+    }
+
+    public void girarNuevamente(int numeroGiro)
+    {
+        bool girar = false;
+        for (int i = 0; i < transform.childCount - 1; i++)
+        {
+            if (transform.GetChild(i).GetComponent<MiniPiezas>().estaOcupado())
+            {
+                girar = true;
+            }
+        }
+        if (girar) girarPieza(numeroGiro);
     }
 }

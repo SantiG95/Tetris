@@ -34,7 +34,7 @@ public class EspacioIzquierda : MonoBehaviour
 
     public bool puedeMoverseIzquierda()
     {
-        if(transform.position.x < -5) return true;
+        if(transform.position.x < 0) return true;
         return grid.casillaEstaOcupada((int)transform.position.x, (int)transform.position.y);
 
     }

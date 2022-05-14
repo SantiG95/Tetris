@@ -49,7 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tiempoMovimiento: 2
   tiempoParaMoverse: 0
-  moverse: 0
+  moverse: 1
 --- !u!1001 &1807125599310079319
 PrefabInstance:
   m_ObjectHideFlags: 0

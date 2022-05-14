@@ -25,10 +25,12 @@ public class ControlPiezaSZ : ControlPiezas
             if (Input.GetKeyDown(KeyCode.Z))
             {
                 girarPieza(-1);
+                girarNuevamente(-1);
             }
             if (Input.GetKeyDown(KeyCode.X))
             {
                 girarPieza(1);
+                girarNuevamente(1);
             }
 
             //Desplazamiento
@@ -77,5 +79,18 @@ public class ControlPiezaSZ : ControlPiezas
         corregirPosicion();
 
         girarPiezas();
+    }
+
+    public new void girarNuevamente(int numeroGiro)
+    {
+        bool girar = false;
+        for (int i = 0; i < transform.childCount - 1; i++)
+        {
+            if (transform.GetChild(i).GetComponent<MiniPiezas>().estaOcupado())
+            {
+                girar = true;
+            }
+        }
+        if (girar) girarPieza(numeroGiro);
     }
 }

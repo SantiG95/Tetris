@@ -80,4 +80,17 @@ public class ControlPiezaI : ControlPiezas
         girarPiezas();
 
     }
+
+    public new void girarNuevamente(int numeroGiro)
+    {
+        bool girar = false;
+        for (int i = 0; i < transform.childCount - 1; i++)
+        {
+            if (transform.GetChild(i).GetComponent<MiniPiezas>().estaOcupado())
+            {
+                girar = true;
+            }
+        }
+        if (girar) girarPieza(numeroGiro);
+    }
 }

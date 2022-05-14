@@ -6,6 +6,7 @@ public class EspacioCasilla : MonoBehaviour
 {
     public List<Sprite> listaSprites;
     [SerializeField] int casillaOcupada;
+    [SerializeField] GameObject miniPiezaOcupante;
     SpriteRenderer miSprite;
     // Start is called before the first frame update
     void Start()
@@ -22,16 +23,11 @@ public class EspacioCasilla : MonoBehaviour
         
     }
 
-    public void cambiarOcupacion()
-    {
-        casillaOcupada = -casillaOcupada + 1;
-        miSprite.sprite = listaSprites[casillaOcupada];
-    }
-
-    public void ocuparCasilla()
+    public void ocuparCasilla(GameObject miniPiezaOcupadora)
     {
         casillaOcupada = 1;
         miSprite.sprite = listaSprites[casillaOcupada];
+        miniPiezaOcupante = miniPiezaOcupadora;
     }
 
     public bool estaOcupada()

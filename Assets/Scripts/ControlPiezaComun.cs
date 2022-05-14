@@ -22,10 +22,12 @@ public class ControlPiezaComun : ControlPiezas
             if (Input.GetKeyDown(KeyCode.Z))
             {
                 girarPieza(-1);
+                girarNuevamente(-1);
             }
             if (Input.GetKeyDown(KeyCode.X))
             {
                 girarPieza(1);
+                girarNuevamente(1);
             }
 
             //Desplazamiento
