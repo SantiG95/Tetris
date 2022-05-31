@@ -8,7 +8,7 @@ public class SiguienteEspacio : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = transform.parent.position + Vector3.down;
+        transform.localPosition = Vector3.down;
     }
 
     // Update is called once per frame

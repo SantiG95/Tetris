@@ -60,7 +60,7 @@ public class MiniPiezas : MonoBehaviour
 
     public void ocuparCasilla()
     {
-        grid.ocuparCasilla((int)transform.position.x, (int)transform.position.y, gameObject);
+        grid.ocuparCasilla((int)Math.Round(transform.position.x), (int)Math.Round(transform.position.y), gameObject);
     }
 
     public bool estaOcupado()

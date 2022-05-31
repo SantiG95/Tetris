@@ -34,6 +34,7 @@ public class ControlPiezas : MonoBehaviour
                     transform.GetChild(i).GetComponent<MiniPiezas>().ocuparCasilla();
                 }
                 GameObject.Find("GridEspacios").GetComponent<GridEspacios>().revisarGrid();
+                GameObject.Find("Proximas Piezas").GetComponent<ProximasPiezas>().arrancarPieza();
                 return;
             }
 
@@ -160,5 +161,10 @@ public class ControlPiezas : MonoBehaviour
             }
         }
         if (girar) girarPieza(numeroGiro);
+    }
+
+    public void comenzarPieza()
+    {
+        moverse = true;
     }
 }

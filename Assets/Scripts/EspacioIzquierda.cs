@@ -10,7 +10,7 @@ public class EspacioIzquierda : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = transform.parent.position + Vector3.left;
+        transform.localPosition = Vector3.left;
 
         grid = GameObject.Find("GridEspacios").GetComponent<GridEspacios>();
     }

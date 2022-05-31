@@ -9,7 +9,7 @@ public class ControlPiezaL : ControlPiezas
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -147,5 +147,24 @@ public class ControlPiezaL : ControlPiezas
             }
         }
         if (girar) girarPieza(numeroGiro);
+    }
+
+    public new void comenzarPieza()
+    {
+        moverse = true;
+        if (modificadorInverso)
+        {
+            transform.GetChild(0).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(2, 1));
+            transform.GetChild(1).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(2, 0));
+            transform.GetChild(2).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(2, -1));
+            transform.GetChild(3).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(1, -1));
+        }
+        else
+        {
+            transform.GetChild(0).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(1, 1));
+            transform.GetChild(1).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(1, 0));
+            transform.GetChild(2).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(1, -1));
+            transform.GetChild(3).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(2, -1));
+        }
     }
 }
