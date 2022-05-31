@@ -52,37 +52,30 @@ public class ProximasPiezas : MonoBehaviour
             switch (posicionesPiezas[i].transform.GetChild(0).name)
             {
                 case ("Pieza O(Clone)"):
-                    Debug.Log("Pieza O");
                     posicionesPiezas[i].transform.GetChild(0).localPosition = new Vector2(-0.2f, 0.2f);
                     break;
 
                 case "Pieza T(Clone)":
-                    Debug.Log("Pieza T");
                     posicionesPiezas[i].transform.GetChild(0).localPosition = new Vector2(0, 0.3f);
                     break;
 
                 case ("Pieza L(Clone)"):
-                    Debug.Log("Pieza L");
                     posicionesPiezas[i].transform.GetChild(0).localPosition = new Vector2(-0.8f, 0);
                     break;
 
                 case "Pieza L inversa(Clone)":
-                    Debug.Log("Pieza L inversa");
                     posicionesPiezas[i].transform.GetChild(0).localPosition = new Vector2(-0.8f, 0);
                     break;
 
                 case ("Pieza S(Clone)"):
-                    Debug.Log("Pieza S");
-                    posicionesPiezas[i].transform.GetChild(0).localPosition = new Vector2(-1f, -0.4f);
+                    posicionesPiezas[i].transform.GetChild(0).localPosition = new Vector2(-1f, -0.65f);
                     break;
 
                 case "Pieza Z(Clone)":
-                    Debug.Log("Pieza Z");
-                    posicionesPiezas[i].transform.GetChild(0).localPosition = new Vector2(-1f, -0.4f);
+                    posicionesPiezas[i].transform.GetChild(0).localPosition = new Vector2(-1f, -0.65f);
                     break;
 
                 case "Pieza I(Clone)":
-                    Debug.Log("Pieza I");
                     posicionesPiezas[i].transform.GetChild(0).localPosition = new Vector2(0, 0.2f);
                     break;
             }
@@ -127,37 +120,30 @@ public class ProximasPiezas : MonoBehaviour
         switch (pieza.name)
         {
             case ("Pieza O(Clone)"):
-                Debug.Log("Pieza O");
                 posicionNueva = new Vector2(4, 21);
                 break;
 
             case "Pieza T(Clone)":
-                Debug.Log("Pieza T");
                 posicionNueva = new Vector2(4, 21);
                 break;
 
             case ("Pieza L(Clone)"):
-                Debug.Log("Pieza L");
                 posicionNueva = new Vector2(3, 21);
                 break;
 
             case "Pieza L inversa(Clone)":
-                Debug.Log("Pieza L inversa");
                 posicionNueva = new Vector2(3, 21);
                 break;
 
             case ("Pieza S(Clone)"):
-                Debug.Log("Pieza S");
                 posicionNueva = new Vector2(2, 19);
                 break;
 
             case "Pieza Z(Clone)":
-                Debug.Log("Pieza Z");
                 posicionNueva = new Vector2(2, 19);
                 break;
 
             case "Pieza I(Clone)":
-                Debug.Log("Pieza I");
                 posicionNueva = new Vector2(4, 22);
                 break;
         }
@@ -170,37 +156,30 @@ public class ProximasPiezas : MonoBehaviour
         switch (pieza.name)
         {
             case ("Pieza O(Clone)"):
-                Debug.Log("Pieza O");
                 pieza.GetComponent<ControlPiezaO>().comenzarPieza();
                 break;
 
             case "Pieza T(Clone)":
-                Debug.Log("Pieza T");
                 pieza.GetComponent<ControlPiezaT>().comenzarPieza();
                 break;
 
             case ("Pieza L(Clone)"):
-                Debug.Log("Pieza L");
                 pieza.GetComponent<ControlPiezaL>().comenzarPieza();
                 break;
 
             case "Pieza L inversa(Clone)":
-                Debug.Log("Pieza L inversa");
                 pieza.GetComponent<ControlPiezaL>().comenzarPieza();
                 break;
 
             case ("Pieza S(Clone)"):
-                Debug.Log("Pieza S");
                 pieza.GetComponent<ControlPiezaSZ>().comenzarPieza();
                 break;
 
             case "Pieza Z(Clone)":
-                Debug.Log("Pieza Z");
                 pieza.GetComponent<ControlPiezaSZ>().comenzarPieza();
                 break;
 
             case "Pieza I(Clone)":
-                Debug.Log("Pieza I");
                 pieza.GetComponent<ControlPiezaI>().comenzarPieza();
                 break;
         }

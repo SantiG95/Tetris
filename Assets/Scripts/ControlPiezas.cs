@@ -17,6 +17,11 @@ public class ControlPiezas : MonoBehaviour
         grid = GameObject.Find("GridEspacios").GetComponent<GridEspacios>();
     }
 
+    void Update()
+    {
+        
+    }
+
 
     public void hacerMovimientoAbajo()
     {
@@ -166,5 +171,10 @@ public class ControlPiezas : MonoBehaviour
     public void comenzarPieza()
     {
         moverse = true;
+    }
+
+    public void detenerPieza()
+    {
+        moverse = false;
     }
 }

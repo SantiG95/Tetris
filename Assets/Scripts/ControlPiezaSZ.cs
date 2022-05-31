@@ -60,7 +60,6 @@ public class ControlPiezaSZ : ControlPiezas
         cantGiros = 1 + -cantGiros;
         int primerY  = modificadorInverso ? 2 : 1;
         int segundoY = modificadorInverso ? 1 : 2;
-        Debug.Log(modificadorInverso);
         if (cantGiros == 0)
         {
             transform.GetChild(0).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(1, primerY));
