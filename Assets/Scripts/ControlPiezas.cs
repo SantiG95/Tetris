@@ -19,7 +19,10 @@ public class ControlPiezas : MonoBehaviour
 
     void Update()
     {
-        
+        if (!GameObject.Find("GameManager").GetComponent<GameManager>().juegoCorriendo)
+        {
+            moverse = false;
+        }
     }
 
 
@@ -39,7 +42,11 @@ public class ControlPiezas : MonoBehaviour
                     transform.GetChild(i).GetComponent<MiniPiezas>().ocuparCasilla();
                 }
                 GameObject.Find("GridEspacios").GetComponent<GridEspacios>().revisarGrid();
-                GameObject.Find("Proximas Piezas").GetComponent<ProximasPiezas>().arrancarPieza();
+                if (GameObject.Find("GameManager").GetComponent<GameManager>().juegoCorriendo)
+                {
+
+                    GameObject.Find("Proximas Piezas").GetComponent<ProximasPiezas>().arrancarPieza();
+                }
                 return;
             }
 

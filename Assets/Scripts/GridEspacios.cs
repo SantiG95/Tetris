@@ -50,6 +50,13 @@ public class GridEspacios : MonoBehaviour
                 {
                     lineaCompleta = false;
                 }
+                else
+                {
+                    if(listaEspacios[alt][anc].transform.position.y >= 20)
+                    {
+                        GameObject.Find("GameManager").GetComponent<GameManager>().terminarJuego();
+                    }
+                }
                 
             } 
             if (lineaCompleta)
