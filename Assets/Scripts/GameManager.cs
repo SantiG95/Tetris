@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     public bool juegoCorriendo = true;
+    public int puntaje = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,5 +23,11 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("JUEGO ACABADO");
         juegoCorriendo = false;
+    }
+
+    public void sumarPuntaje(int valor)
+    {
+        puntaje += valor;
+        GameObject.Find("PuntajeTexto").GetComponent<TextMeshPro>().text = "Puntaje: " + puntaje;
     }
 }

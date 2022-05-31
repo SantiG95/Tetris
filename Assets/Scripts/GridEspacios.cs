@@ -41,6 +41,8 @@ public class GridEspacios : MonoBehaviour
     public void revisarGrid()
     {
         bool lineaCompleta = true;
+        int modificadorLineasBorradas = 0;
+        int comboLineasBorradas = 0;
 
         for (int alt = (int)origen.y; alt < alto; alt++)
         {
@@ -63,9 +65,14 @@ public class GridEspacios : MonoBehaviour
             {
                 borrarLinea(alt);
                 alt -= 1;
+                modificadorLineasBorradas = 1;
+                comboLineasBorradas += 1;
+
             }
             lineaCompleta = true;
+            
         }
+        GameObject.Find("GameManager").GetComponent<GameManager>().sumarPuntaje((100 * comboLineasBorradas + 50 * (comboLineasBorradas - 1)) * modificadorLineasBorradas);
     }
 
     private void borrarLinea(int nFila)
