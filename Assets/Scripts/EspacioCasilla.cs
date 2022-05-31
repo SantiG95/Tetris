@@ -34,4 +34,24 @@ public class EspacioCasilla : MonoBehaviour
     {
         return casillaOcupada == 1;
     }
+
+    public void liberarCasilla()
+    {
+        casillaOcupada = 0;
+        miSprite.sprite = listaSprites[casillaOcupada];
+        Destroy(miniPiezaOcupante);
+    }
+
+    public GameObject soltarCasilla()
+    {
+        casillaOcupada = 0;
+        miSprite.sprite = listaSprites[casillaOcupada];
+
+        return miniPiezaOcupante;
+    }
+
+    public void moverAbajoSprite()
+    {
+        miniPiezaOcupante.GetComponent<MiniPiezas>().moverAbajo();
+    }
 }

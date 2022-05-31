@@ -41,6 +41,7 @@ public class GridEspacios : MonoBehaviour
     public void revisarGrid()
     {
         bool lineaCompleta = true;
+
         for (int alt = (int)origen.y; alt < alto; alt++)
         {
             for (int anc = (int)origen.x; anc < ancho; anc++)
@@ -51,13 +52,35 @@ public class GridEspacios : MonoBehaviour
                 }
                 
             } 
-            if (lineaCompleta) borrarLinea(alt);
+            if (lineaCompleta)
+            {
+                borrarLinea(alt);
+                alt -= 1;
+            }
             lineaCompleta = true;
         }
     }
 
-    private void borrarLinea(float alt)
+    private void borrarLinea(int nFila)
     {
-        Debug.Log("borro la linea " + alt);
+        //TODO
+        for (int anc = (int)origen.x; anc < ancho; anc++)
+        {
+            listaEspacios[nFila][anc].GetComponent<EspacioCasilla>().liberarCasilla();
+        }
+
+
+        for (int alt = nFila + 1; alt < alto; alt++)
+        {
+            for (int anc = (int)origen.x; anc < ancho; anc++)
+            {
+                if (listaEspacios[alt][anc].GetComponent<EspacioCasilla>().estaOcupada())
+                {
+                    GameObject miniPieza = listaEspacios[alt][anc].GetComponent<EspacioCasilla>().soltarCasilla();
+                    listaEspacios[alt - 1][anc].GetComponent<EspacioCasilla>().ocuparCasilla(miniPieza);
+                    listaEspacios[alt - 1][anc].GetComponent<EspacioCasilla>().moverAbajoSprite();
+                }
+            }
+        }
     }
 }

@@ -67,4 +67,9 @@ public class MiniPiezas : MonoBehaviour
     {
         return grid.casillaEstaOcupada((int)transform.position.x, (int)transform.position.y);
     }
+
+    public void moverAbajo()
+    {
+        transform.position += Vector3.down;
+    }
 }

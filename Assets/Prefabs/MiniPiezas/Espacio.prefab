@@ -50,6 +50,7 @@ MonoBehaviour:
   - {fileID: 6699210058198098298, guid: 87b155b97cea16242b1fc53c2f263f58, type: 3}
   - {fileID: -3821963848647612774, guid: 87b155b97cea16242b1fc53c2f263f58, type: 3}
   casillaOcupada: 0
+  miniPiezaOcupante: {fileID: 0}
 --- !u!61 &-4609066798395587770
 BoxCollider2D:
   m_ObjectHideFlags: 0

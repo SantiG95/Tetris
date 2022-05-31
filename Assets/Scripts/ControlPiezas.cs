@@ -82,7 +82,7 @@ public class ControlPiezas : MonoBehaviour
     {
         if(direccionMovimiento > 0)
         {
-            for (int i = 0; i < transform.childCount -1; i++)
+            for (int i = 0; i < transform.childCount; i++)
             {
                 //Debug.Log(transform.GetChild(i).GetComponent<MiniPiezas>());
                 if (transform.GetChild(i).GetComponent<MiniPiezas>().espacioDerechaEstaOcupado())
@@ -109,7 +109,8 @@ public class ControlPiezas : MonoBehaviour
     {
         for (int i = 0; i < transform.childCount; i++)
         {
-            if(transform.GetChild(i).position.x > 9)
+            
+            if (transform.GetChild(i).position.x > 9)
             {
                 transform.position += new Vector3(-1, 0, 0);
             }
@@ -117,13 +118,41 @@ public class ControlPiezas : MonoBehaviour
             {
                 transform.position += new Vector3(1, 0, 0);
             }
+            if (transform.GetChild(i).GetComponent<MiniPiezas>().estaOcupado())
+            {
+                //TODO corregir posicion despues del giro
+                Debug.Log(transform.localPosition.x + ", " + transform.localPosition.y);
+                if (transform.localPosition.y == 0)
+                {
+                    if (transform.localPosition.x == -1)
+                    {
+
+                        transform.position += new Vector3(-1, 0, 0);
+                    }
+                    else
+                    {
+                        transform.position += new Vector3(2, 0, 0);
+                    }
+                }
+                else if (transform.localPosition.x == 0)
+                {
+                    if (transform.localPosition.y == -1)
+                    {
+                        transform.position += new Vector3(-1, 0, 0);
+                    }
+                    else
+                    {
+                        transform.position += new Vector3(1, 0, 0);
+                    }
+                }
+            }
         }
     }
 
     public void girarNuevamente(int numeroGiro)
     {
         bool girar = false;
-        for (int i = 0; i < transform.childCount - 1; i++)
+        for (int i = 0; i < transform.childCount; i++)
         {
             if (transform.GetChild(i).GetComponent<MiniPiezas>().estaOcupado())
             {
