@@ -79,38 +79,44 @@ public class Reserva : MonoBehaviour
         switch (piezaEnJuego.name)
         {
             case ("Pieza O(Clone)"):
-                piezaEnJuego.transform.localPosition = new Vector2(-0.2f, 0.2f);
                 piezaEnJuego.GetComponent<ControlPiezaO>().detenerPieza();
+                piezaEnJuego.transform.localPosition = new Vector2(-0.2f, 0.2f);
                 break;
 
             case "Pieza T(Clone)":
-                piezaEnJuego.transform.localPosition = new Vector2(0, 0.3f);
                 piezaEnJuego.GetComponent<ControlPiezaT>().detenerPieza();
+                piezaEnJuego.GetComponent<ControlPiezaT>().resetearPosicion();
+                piezaEnJuego.transform.localPosition = new Vector2(0, -0.2f);
                 break;
 
             case ("Pieza L(Clone)"):
-                piezaEnJuego.transform.localPosition = new Vector2(-0.8f, 0);
                 piezaEnJuego.GetComponent<ControlPiezaL>().detenerPieza();
+                piezaEnJuego.GetComponent<ControlPiezaL>().resetearPosicion();
+                piezaEnJuego.transform.localPosition = new Vector2(-0.8f, 0);
                 break;
 
             case "Pieza L inversa(Clone)":
-                piezaEnJuego.transform.localPosition = new Vector2(-0.8f, 0);
                 piezaEnJuego.GetComponent<ControlPiezaL>().detenerPieza();
+                piezaEnJuego.GetComponent<ControlPiezaL>().resetearPosicion();
+                piezaEnJuego.transform.localPosition = new Vector2(-0.8f, 0);
                 break;
 
             case ("Pieza S(Clone)"):
-                piezaEnJuego.transform.localPosition = new Vector2(-1f, -0.65f);
                 piezaEnJuego.GetComponent<ControlPiezaSZ>().detenerPieza();
+                piezaEnJuego.GetComponent<ControlPiezaSZ>().resetearPosicion();
+                piezaEnJuego.transform.localPosition = new Vector2(-1f, -0.65f);
                 break;
 
             case "Pieza Z(Clone)":
-                piezaEnJuego.transform.localPosition = new Vector2(-1f, -0.65f);
                 piezaEnJuego.GetComponent<ControlPiezaSZ>().detenerPieza();
+                piezaEnJuego.GetComponent<ControlPiezaSZ>().resetearPosicion();
+                piezaEnJuego.transform.localPosition = new Vector2(-1f, -0.65f);
                 break;
 
             case "Pieza I(Clone)":
-                piezaEnJuego.transform.localPosition = new Vector2(0, 0.2f);
                 piezaEnJuego.GetComponent<ControlPiezaI>().detenerPieza();
+                piezaEnJuego.GetComponent<ControlPiezaI>().resetearPosicion();
+                piezaEnJuego.transform.localPosition = new Vector2(0, 0.2f);
                 break;
         }
 

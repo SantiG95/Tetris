@@ -55,4 +55,10 @@ public class ControlPiezaO : ControlPiezas
         Debug.Log("Giro el cuadrado");
         return;
     }
+
+    public void resetearPosicion()
+    {
+        return;
+    }
+
 }

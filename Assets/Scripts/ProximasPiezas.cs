@@ -56,7 +56,7 @@ public class ProximasPiezas : MonoBehaviour
                     break;
 
                 case "Pieza T(Clone)":
-                    posicionesPiezas[i].transform.GetChild(0).localPosition = new Vector2(0, 0.3f);
+                    posicionesPiezas[i].transform.GetChild(0).localPosition = new Vector2(0, -0.2f);
                     break;
 
                 case ("Pieza L(Clone)"):

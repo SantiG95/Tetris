@@ -93,4 +93,20 @@ public class ControlPiezaI : ControlPiezas
         }
         if (girar) girarPieza(numeroGiro);
     }
+
+    public void resetearPosicion()
+    {
+        cantGiros = 0;
+        int posicionNueva = 1;
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            transform.GetChild(i).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(0, posicionNueva));
+            posicionNueva -= 1;
+        }
+
+        corregirPosicion();
+        girarPiezas();
+    }
 }
+
+

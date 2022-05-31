@@ -92,4 +92,29 @@ public class ControlPiezaSZ : ControlPiezas
         }
         if (girar) girarPieza(numeroGiro);
     }
+
+    public void resetearPosicion()
+    {
+        cantGiros = 0;
+
+        int primerY = modificadorInverso ? 2 : 1;
+        int segundoY = modificadorInverso ? 1 : 2;
+        if (cantGiros == 0)
+        {
+            transform.GetChild(0).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(1, primerY));
+            transform.GetChild(1).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(2, primerY));
+            transform.GetChild(2).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(2, segundoY));
+            transform.GetChild(3).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(3, segundoY));
+        }
+        else
+        {
+            transform.GetChild(0).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(segundoY, 1));
+            transform.GetChild(1).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(segundoY, 2));
+            transform.GetChild(2).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(primerY, 2));
+            transform.GetChild(3).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(primerY, 3));
+        }
+
+        corregirPosicion();
+        girarPiezas();
+    }
 }

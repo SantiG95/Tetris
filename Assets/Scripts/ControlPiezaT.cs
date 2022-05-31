@@ -62,32 +62,32 @@ public class ControlPiezaT : ControlPiezas
         switch (cantGiros)
         {
             case 0:
-                transform.GetChild(0).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(-1,  0));
-                transform.GetChild(1).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2( 0,  0));
-                transform.GetChild(2).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2( 1,  0));
-                transform.GetChild(3).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2( 0, -1));
-                break;
-
-
-            case 1:
-                transform.GetChild(0).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(0, 1));
-                transform.GetChild(1).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(0, 0));
-                transform.GetChild(2).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(0, -1));
-                transform.GetChild(3).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(-1, 0));
-                break;
-
-            case 2:
                 transform.GetChild(0).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(1, 0));
                 transform.GetChild(1).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(0, 0));
                 transform.GetChild(2).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(-1, 0));
                 transform.GetChild(3).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(0, 1));
                 break;
 
-            case 3:
+
+            case 1:
                 transform.GetChild(0).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(0, -1));
                 transform.GetChild(1).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(0, 0));
                 transform.GetChild(2).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(0, 1));
                 transform.GetChild(3).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(1, 0));
+                break;
+
+            case 2:
+                transform.GetChild(0).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(-1, 0));
+                transform.GetChild(1).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(0, 0));
+                transform.GetChild(2).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(1, 0));
+                transform.GetChild(3).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(0, -1));
+                break;
+
+            case 3:
+                transform.GetChild(0).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(0, 1));
+                transform.GetChild(1).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(0, 0));
+                transform.GetChild(2).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(0, -1));
+                transform.GetChild(3).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(-1, 0));
                 break;
         }
         corregirPosicion();
@@ -109,6 +109,18 @@ public class ControlPiezaT : ControlPiezas
             girarPieza(numeroGiro);
             corregirPosicion();
             };
+    }
+
+    public void resetearPosicion()
+    {
+        cantGiros = 0;
+        transform.GetChild(0).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(1, 0));
+        transform.GetChild(1).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(0, 0));
+        transform.GetChild(2).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(-1, 0));
+        transform.GetChild(3).GetComponent<MiniPiezas>().cambiarPosicion(new Vector2(0, 1));
+
+        corregirPosicion();
+        girarPiezas();
     }
 
 }
