@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("JUEGO ACABADO");
         juegoCorriendo = false;
         finDelJuego.SetActive(true);
+        GameObject.Find("Sonidos").GetComponent<Sonidos>().reproducirSonidoFinDelJuego();
     }
 
     public void sumarPuntaje(int valor)

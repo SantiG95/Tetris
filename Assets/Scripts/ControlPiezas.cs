@@ -36,7 +36,7 @@ public class ControlPiezas : MonoBehaviour
             if (!puedeMoverseAbajo())
             {
                 moverse = false;
-
+                GameObject.Find("Sonidos").GetComponent<Sonidos>().reproducirSonidoPiezaColocada();
                 for (int i = 0; i < transform.childCount; i++)
                 {
                     transform.GetChild(i).GetComponent<MiniPiezas>().ocuparCasilla();
@@ -88,6 +88,7 @@ public class ControlPiezas : MonoBehaviour
         if (puedeMoverseAlCostado(direccionMovimiento))
         {
             transform.position += new Vector3(direccionMovimiento, 0, 0);
+            GameObject.Find("Sonidos").GetComponent<Sonidos>().reproducirSonidoMovimientoLateral();
         }
     }
 
