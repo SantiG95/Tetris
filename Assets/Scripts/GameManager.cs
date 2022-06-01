@@ -5,6 +5,7 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject finDelJuego;
     public bool juegoCorriendo = true;
     public int puntaje = 0;
     // Start is called before the first frame update
@@ -23,6 +24,7 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("JUEGO ACABADO");
         juegoCorriendo = false;
+        finDelJuego.SetActive(true);
     }
 
     public void sumarPuntaje(int valor)
